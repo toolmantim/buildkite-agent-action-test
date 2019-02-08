@@ -9,6 +9,7 @@ action "Start Agent" {
   env = {
     TAGS = "github-action"
     NAME = "github-action-%n"
+    QUEUE = "github-action-test"
   }
 }
 
