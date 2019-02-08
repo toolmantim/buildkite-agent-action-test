@@ -7,9 +7,8 @@ action "Start Agent" {
   uses = "toolmantim/actions/agent@master"
   secrets = ["BUILDKITE_AGENT_TOKEN"]
   env = {
-    TAGS = "github-action"
-    NAME = "github-action-%n"
-    QUEUE = "github-action-test"
+    TAGS = "queue=github-action-test"
+    NAME = "github-action-test-%n"
   }
 }
 
